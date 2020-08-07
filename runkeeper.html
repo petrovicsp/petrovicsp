@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:bold" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:regular" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:light" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:light" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="page-container">
+  <div id="content-wrap">
+
+<!-- Navbar -->
+
+  <nav id="backtotop" nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <div id="logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="logo2.png" style="max-width:210px"/>
+            </a>
+          </div>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" id="navright">
+          <li><a href="about.html">About</a></li>
+          <li><a href="https://drive.google.com/file/d/1vc3fqmbeXtGAU_iB8Cf2YjRzhDrk4Pl9/view?usp=sharing" target="_blank">Resume</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="runkeeper.html">Runkeeper</a></li>
+            <li><a href="atlas.html">Atlas</a></li>
+            <li><a href="synapse_website.html">Synapse Website</a></li>
+            <li><a href="synapse_banklogins.html">Synapse Bank Logins</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="hero">
+  <img src="runkeeper_hero.png"/>
+</div>
+<div class="headers">
+  <h1 style="font-size:50px; padding-bottom:16px;">Runkeeper: A Usability Case Study</h1>
+</div>
+<div class="subheaders">
+  <h2>Objectives</h2>
+</div>
+<div class="bodytext">
+  <ol>
+    <li style="list-style-position:inside";>Analyze the app to brainstorm areas of friction for users</li>
+    <li style="list-style-position:inside";>Conduct usability tests to confirm pain points or uncover new ones</li>
+    <li style="list-style-position:inside";>Design a prototype to resolve major pain points</li>
+    <li style="list-style-position:inside";>Iterate until I can validate all design changes with data</li>
+  </ol>
+</div>
+<div class="subheaders">
+  <h2>Why Runkeeper?</h2>
+</div>
+<div class="bodytext">
+  <p>Runkeeper is a GPS-enabled fitness tracking application that allows busy people to quickly set exercise goals and conquer them with friends. When I first
+     started fiddling with the app, I was pleasantly surprised by how well-designed the user interface was. As a fitness enthusiast and product designer looking
+      for a challenge, I decided to see if there was anything I could do to improve the user experience!</p>
+</div>
+<div class="subheaders">
+  <h2>Results</h2>
+</div>
+<div class="bodytext">
+  <p>The UI changes I implemented yielded the following results during usability testing:</p>
+</div>
+<div class="hero">
+    <div id="medium-large">
+      <img src="runkeeper_results.png"/>
+    </div>
+</div>
+<div class="subheaders">
+  <h2>Personas</h2>
+</div>
+<div class="bodytext">
+  <p>Before I could dive into usability testing, I needed to understand what kind of people are likely to use Runkeeper. This was my top priority because I knew
+     that a solid understanding of the user base would help inform everything I do later in the design process. After conducting research on the company and
+      reading testimonials from various users, I started putting together some provisional personas. I then further refined these personas by interviewing users
+       about their hobbies, goals, and previous exposure to fitness apps:</p>
+</div>
+<div class="hero">
+    <div id="medium">
+      <img src="runkeeper_persona.png" style="margin-bottom:12px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="subheaders">
+  <h2>Initial Observations</h2>
+</div>
+<div class="bodytext">
+  <p>As I mentioned earlier, I had a very positive first impression of Runkeeper. The user interface achieves a clean, consistent look by sticking to a teal and
+     orange color scheme with plenty of white space. In terms of information architecture, there are five distinct sections: summary, workout programs, start a
+      workout, friends, and challenges.</p>
+</div>
+<div class="hero">
+    <div id="medium">
+      <img src="runkeeper_observations.png" style="margin-bottom:12px"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>After digging a little deeper, I was able to uncover a few areas that I considered weaknesses. For example, it was a bit challenging to set up a goal and
+     view my workout statistics. I also signed up for a training plan and felt a strong urge to quickly scroll through a list of the workouts. Unfortunately,
+      there was no option to do so!</p>
+</div>
+<div class="subheaders">
+  <h2>Usability Testing</h2>
+</div>
+<div class="bodytext">
+  <p>Operating on these hunches, I set out to conduct guerrilla testing at Westfield Mall to discover whether or not these were true pain points.<br><br>
+    These are the 3 separate tasks I had users complete:</p>
+</div>
+<div id="runkeeper_textbubble">
+  <p>1. Summer is coming and you want to look good on the beach. Create a goal to lose 10 pounds in 3 months.</p>
+</div>
+<div id="runkeeper_textbubble">
+  <p>2. Look up how many calories you burned on your 5K run last week.</p>
+</div>
+<div id="runkeeper_textbubble">
+  <p>3. You signed up for a training plan and want to quickly glance at your workouts for the coming weeks. Find the full schedule
+      of your current 8-week training plan.</p>
+</div>
+<div class="subheaders">
+  <h2>Affinity Mapping</h2>
+</div>
+<div class="bodytext">
+  <p>After usability testing, my goal was to analyze the data I collected and uncover the major pain points. I took videos of the way each user interacted with
+     the app (with their permission of course) and collected a variety of observations on sticky notes. Next, I grouped together my insights to create an affinity
+      map. This mapping is based on which task the user was performing, with different colors representing different users.</p>
+</div>
+<div class="hero">
+    <div id="small">
+      <img src="affinity_map.png" style="margin-bottom:12px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="subheaders">
+  <h2>2x2 Matrix</h2>
+</div>
+<div class="bodytext">
+  <p>I then made a rough prediction of the importance of each task to both Runkeeper and its users. In conjunction with affinity mapping, this exercise helped me
+     determine which pain points to focus on. Note that these are assumptions that I strived to validate through company research and user interviews.</p>
+</div>
+<div class="hero">
+    <div id="medium">
+      <img src="2x2.png" style="margin-bottom:12px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>Runkeeper, like many other fitness apps on the market, generates revenue by providing users the option to purchase advanced training plans and stronger
+     analyses of their progress. Thus, I consider workout statistics and training schedules to be more critical for the business than the ability for a user to
+      create a goal.<br><br>For users, goal-setting is the most basic and essential feature to expect from a fitness app like Runkeeper. They want to create goals and
+       achieve them.</p>
+</div>
+<div class="subheaders">
+  <h2>Pain Points</h2>
+</div>
+<div class="bodytext">
+  <p>The affinity mapping and 2x2 matrix yielded some very interesting results! Here are the 2 main pain points that surfaced:</p>
+</div>
+<div class="hero">
+    <div id="small">
+      <img src="runkeeper_painpoints.png" style="margin-bottom:12px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="subheaders">
+  <h2>Findings and Prototypes</h2>
+</div>
+<div class="bodytext">
+  <p>I discovered that the 1st pain point applied to all three tasks. For reference, here are the tasks I had users perform:</p>
+</div>
+<div class="hero">
+    <div id="medium">
+      <img src="runkeeper_tasks.png" style="margin-bottom:30px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>The only function of the photo upload icon is to choose a profile picture. However, it seems this was unclear to the vast majority of users. Out of the 5
+     people who initially interacted with the app, 4 ended up selecting the photo upload icon regardless of the task they were trying to accomplish.<br><br>If
+      you couple the icon’s large size with the fact that it’s a beautiful smiley face, it’s no wonder people fell into a trap!</p>
+</div>
+<div class="hero">
+    <div id="extrasmall">
+      <img src="griffin.png" style="margin-bottom:60px; margin-top:40px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>I discovered that the 1st pain point applied to all three tasks. For reference, here are the tasks I had users perform:</p>
+</div>
+<div class="hero">
+    <div id="medium-large">
+      <img src="me_page.png" style="margin-bottom:30px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>My third task was a doozie that revealed the 2nd pain point: it was impossible for users to view a listed workout schedule for a training plan they signed
+     up for without deleting the plan and previewing it.<br><br>When asked how important the ability to view a listed schedule was, every user made it clear that
+      it was a necessity. This made it quite obvious that adding this feature would address their frustrations. Take a moment to compare the UI Flow before and
+       after I implemented my changes:</p>
+</div>
+<div class="hero">
+    <div id="medium">
+      <img src="runkeeper_flow.png" style="margin-bottom:60px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>The two screens below show UI changes I made on the Training Page:</p>
+</div>
+<div class="hero">
+    <div id="medium-large">
+      <img src="training_page.png" style="margin-bottom:30px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>The screens below show the existing process a user would go through in order to preview their training schedule for a plan they haven’t signed up for yet.
+     Note: I did not alter the UI for any of these screens.</p>
+</div>
+<div class="hero">
+    <div id="medium-large">
+      <img src="schedule_before.png" style="margin-bottom:30px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>As you can see, the only way to view the full list of workouts is to preview a specific plan. Once you actually sign up for the plan, you’re no longer able
+     to view that list (or preview it, for that matter)! To allow users to view a listed schedule for the plan they already signed up for, I created a separate
+      flow:</p>
+</div>
+<div class="hero">
+    <div id="medium-large">
+      <img src="schedule_after.png" style="margin-bottom:30px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>The second screen in this flow was previously only available as a preview before signing up for a plan. I added the third screen to show that you’d be able
+     to take the same actions from the list view as you can from the card view (e.g. selecting or skipping a workout).</p>
+</div>
+<div class="subheaders">
+  <h2>Validation and Conclusion</h2>
+</div>
+<div class="bodytext">
+  <p>In order to confidently validate that my UI changes had a positive impact by eliminating the main user pain points, I needed to compare the results of
+     initial usability testing to the results of my final round of testing. <br><br>Note that I am omitting all other rounds of iteration and just focusing on
+      the start-to-end deltas. First, let’s look at the number of people during initial guerilla testing who were able to accomplish each task within 20 seconds:</p>
+</div>
+<div class="hero">
+    <div id="medium">
+      <img src="tasks_before.png" style="margin-bottom:60px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>Now let’s look at how these results changed during the final round of user validation, where new users were again given 20 seconds per task:</p>
+</div>
+<div class="hero">
+    <div id="medium">
+      <img src="tasks_after.png" style="margin-bottom:60px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>Finally, I noted the number of people who did not mistakenly select the photo upload icon:</p>
+</div>
+<div class="hero">
+    <div id="medium">
+      <img src="upload_icon_results.png" style="margin-bottom:60px; margin-top:12px;"/>
+    </div>
+</div>
+<div class="bodytext">
+  <p>I was pleased to see that creating a camera icon and including ‘Add Photo’ clarified the photo uploader’s functionality while creating less of a distraction
+   for users. As for the full schedule, everyone was able to find what they were looking for and confirmed their desire to keep this feature.<br><br>I received a few
+    comments about the possibility of presenting a user’s training plan using a series of collapsible drop-downs inside the calendar page. This would allow users
+     to look up all training sessions arranged by week and would present the information in a neat, interactive way. It’s an interesting solution and I look
+      forward to investigating it further!<br><br>Here’s the interactive prototype I used to validate my design solutions:</p>
+</div>
+
+<div class="interactive_prototype">
+<iframe src="https://marvelapp.com/2ad1ej6?emb=1" width="320" height="700" allowTransparency="true" frameborder="0"></iframe>
+</div>
+
+
+
+
+<!-- Back to top button -->
+
+  <div id="backtotop">
+    <a href="#backtotop"><button class="button" style="outline:none;">Back to top</button></a>
+  </div>
+
+<!-- Other Projects -->
+
+  <div class="other_projects">
+      <div class="secondary"><a href="synapse_website.html" style="text-decoration:none; color:#249FAF">Synapse Web</a></div>
+      <div class="secondary"><a href="synapse_banklogins.html" style="text-decoration:none; color:#249FAF">Synapse BL</a></div>
+      <div class="secondary"><a href="atlas.html" style="text-decoration:none; color:#249FAF";>Atlas</a></div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+
+  <div class="fa" style=text-align:"center;">
+   <footer id="footer">
+     <a href="mailto:petrovicsp36@gmail.com" class="fa fa-envelope" style="text-decoration:none"></a>
+     <a href="https://www.linkedin.com/in/peter-petrovics/" class="fa fa-linkedin" target="_blank" style="text-decoration:none"></a>
+     <a href="https://medium.com/@petrovics_p" class="fa fa-medium" target="_blank" style="text-decoration:none"></a>
+     <p>&copy 2020 Designed & Coded by Peter Petrovics</p>
+   </footer>
+ </div>
+</div>
+
+
+</body>
+</html>
